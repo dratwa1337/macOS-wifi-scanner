@@ -14,6 +14,8 @@ This project is managed with `uv`. To install dependencies and run:
 
 ### 💻 Terminal Mode (v1)
 
+![](img/terminal-preview.png)
+
 ```bash
 uv sync
 # Single scan
@@ -23,6 +25,8 @@ uv run wifi-scanner --watch
 ```
 
 ### 🌐 Web UI Dashboard (v2)
+
+![](img/web-preview.png)
 
 ```bash
 uv sync
