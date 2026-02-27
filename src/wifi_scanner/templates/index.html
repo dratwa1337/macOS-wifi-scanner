@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Scanner Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WiFi Scanner</h1>
+            <div class="controls">
+                <button id="scan-btn" class="btn pulse">Scan Now</button>
+                <div class="status">
+                    <span id="status-dot" class="dot"></span>
+                    <span id="status-text">Ready</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="dashboard-grid">
+                <div class="card table-card">
+                    <div class="card-header">
+                        <h2>Nearby Networks</h2>
+                        <span id="network-count" class="badge">0 found</span>
+                    </div>
+                    <div class="table-container">
+                        <table id="wifi-table">
+                            <thead>
+                                <tr>
+                                    <th>SSID</th>
+                                    <th>Signal</th>
+                                    <th>Band</th>
+                                    <th>Channel</th>
+                                    <th>Security</th>
+                                </tr>
+                            </thead>
+                            <tbody id="wifi-body">
+                                <tr>
+                                    <td colspan="5" class="empty-state">Starting scan...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>macOS WiFi Scanner &copy; 2026</p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
